@@ -12,12 +12,12 @@ csvFile.close()
 
 
 
-rowNum=input("Enter ID: ")
-product=input("Enter Product")
-hindrance=input("hindrance: ")
+#rowNum=input("Enter ID: ")
+#product=input("Enter Product: ")
+#hindrance=input("hindrance: ")
 
 
-row = [rowNum, hindrance, product]
+#row = [rowNum, hindrance, product]
 
 with open('hindrance.csv', 'r') as readFile:
     reader = csv.reader(readFile)
