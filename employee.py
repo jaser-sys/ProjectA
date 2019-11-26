@@ -16,9 +16,10 @@ csvFile.close()
 rowNum=input("Enter ID: ")
 name=input("Enter Name: ")
 address=input("Enter Address: ")
+phoneNum=input("Enter Phone")
 
 
-row = [rowNum, name, address]
+row = [rowNum, name, address, phoneNum]
 
 with open('employee.csv', 'r') as readFile:
     reader = csv.reader(readFile)

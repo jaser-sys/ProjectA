@@ -14,12 +14,12 @@ csvFile.close()
 
 rowNum=input("Enter ID: ")
 name=input("Enter Name: ")
-password=input("Enter Password: ")
-device=input("Enter Device")
-hindrence=input("Enter The Tye Of corruptions")
+phoneNum=input("Phone Nummber ")
+device=input("Enter Device: ")
+hindrence=input("Enter The Tye Of corruptions: ")
 
 
-row = [rowNum, name, password,device, hindrence]
+row = [rowNum, name, phoneNum,device, hindrence]
 
 with open('customers.csv', 'r') as readFile:
     reader = csv.reader(readFile)
