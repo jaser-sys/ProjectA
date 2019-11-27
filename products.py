@@ -1,7 +1,5 @@
 import csv
-csv.register_dialect('myDialect',
-delimiter = ',',
-skipinitialspace=True)
+csv.register_dialect('myDialect', delimiter = ',', skipinitialspace=True)
 
 with open('products.csv', 'r') as csvFile:
     reader = csv.reader(csvFile, dialect='myDialect')
@@ -12,7 +10,7 @@ csvFile.close()
 
 
 
-rowNum=input("Enter ID: ")
+rowNum=input("Enter SN: ")
 product=input("product: ")
 
 
