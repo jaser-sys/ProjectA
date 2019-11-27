@@ -1,7 +1,5 @@
 import csv
-csv.register_dialect('myDialect',
-delimiter = ',',
-skipinitialspace=True)
+csv.register_dialect('myDialect', delimiter = ',', skipinitialspace=True)
 
 with open('customers.csv', 'r') as csvFile:
     reader = csv.reader(csvFile, dialect='myDialect')
@@ -14,7 +12,7 @@ csvFile.close()
 
 rowNum=input("Enter ID: ")
 name=input("Enter Name: ")
-phoneNum=input("Phone Nummber ")
+phoneNum=input("Phone Number ")
 device=input("Enter Device: ")
 hindrence=input("Enter The Tye Of corruptions: ")
 
@@ -32,3 +30,11 @@ with open('customers.csv', 'w') as writeFile:
 
 readFile.close()
 writeFile.close()
+
+
+
+
+
+
+
+
